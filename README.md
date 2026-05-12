@@ -26,7 +26,7 @@ member - 5
 3.Section = 2ph03
 
 PROJECT DETAILS:
- Project title : Online Shopping website
+ Project title : Travelling Guide website
 
 
 
