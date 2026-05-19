@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FAQs & Contact</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#333;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      background:#023e8a;
+      padding:15px 30px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .logo{
+      color:white;
+      font-size:28px;
+      font-weight:bold;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      flex-wrap:wrap;
+    }
+
+    nav ul li{
+      margin-left:15px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      padding:8px 14px;
+      border-radius:5px;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      background:#0077b6;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      height:70vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1521791136064-7986c2920216');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content h1{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    .hero-content p{
+      font-size:20px;
+    }
+
+    /* MAIN CONTAINER */
+
+    .container{
+      width:90%;
+      max-width:1200px;
+      margin:50px auto;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:35px;
+      color:#023e8a;
+      margin-bottom:30px;
+    }
+
+    /* FAQ BOXES */
+
+    .faq-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+      margin-top:30px;
+    }
+
+    .faq-box{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .faq-box:hover{
+      transform:translateY(-5px);
+    }
+
+    .faq-box h2{
+      color:#0077b6;
+      margin-bottom:15px;
+    }
+
+    .faq-box p{
+      line-height:1.7;
+    }
+
+    /* CONTACT SECTION */
+
+    .contact{
+      margin-top:60px;
+      background:white;
+      padding:30px;
+      border-radius:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      text-align:center;
+    }
+
+    .contact h2{
+      color:#0077b6;
+      margin-bottom:20px;
+    }
+
+    .contact p{
+      margin-bottom:12px;
+      font-size:18px;
+    }
+
+    /* GALLERY */
+
+    .gallery{
+      margin-top:50px;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
+
+    /* BUTTON */
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      text-decoration:none;
+      background:#0077b6;
+      color:white;
+      padding:12px 20px;
+      border-radius:5px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#023e8a;
+    }
+
+    .center{
+      text-align:center;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#023e8a;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:60px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <div class="logo">Travelling Resources</div>
+
+    <ul>
+      <li><a href="Resources.html">Home</a></li>
+      <li><a href="transportation.html">Transportation</a></li>
+      <li><a href="hotel-booking.html">Hotels</a></li>
+      <li><a href="travel-apps.html">Travel Apps</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="faq-contact.html">FAQ & Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>FAQs & Contact</h1>
+
+      <p>Get answers to common travel questions and contact support easily.</p>
+
+    </div>
+
+  </section>
+
+  <!-- MAIN CONTENT -->
+
+  <section class="container">
+
+    <h1 class="section-title">Frequently Asked Questions</h1>
+
+    <!-- FAQ BOXES -->
+
+    <div class="faq-container">
+
+      <!-- FAQ 1 -->
+
+      <div class="faq-box">
+
+        <h2>When should I book flights?</h2>
+
+        <p>
+          Booking flights 1–2 months early usually gives better prices and more options.
+        </p>
+
+      </div>
+
+      <!-- FAQ 2 -->
+
+      <div class="faq-box">
+
+        <h2>How can I travel safely?</h2>
+
+        <p>
+          Keep important documents secure, share your location with family, and stay updated on local rules.
+        </p>
+
+      </div>
+
+      <!-- FAQ 3 -->
+
+      <div class="faq-box">
+
+        <h2>What should I pack?</h2>
+
+        <p>
+          Carry essential clothing, medicines, chargers, travel documents, and emergency contacts.
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- CONTACT SECTION -->
+
+    <div class="contact">
+
+      <h2>Contact Information</h2>
+
+      <p><strong>Email:</strong> travelresources@example.com</p>
+
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+
+      <p><strong>Address:</strong> Bengaluru, Karnataka, India</p>
+
+    </div>
+
+    <!-- GALLERY -->
+
+    <h1 class="section-title">Travel Support Gallery</h1>
+
+    <div class="gallery">
+
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="">
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+      <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f" alt="">
+
+    </div>
+
+    <!-- BUTTON -->
+
+    <div class="center">
+
+      <a href="Resources.html" class="btn">Back to Home</a>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>© 2026 Travelling Resources | Help & Support for Every Journey</p>
+
+  </footer>
+
+</body>
+</html>
