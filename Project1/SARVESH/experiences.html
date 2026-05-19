@@ -1,0 +1,383 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Experiences</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      color:#333;
+    }
+
+    /* Header */
+
+    header{
+      background:linear-gradient(to right,#0077b6,#00b4d8);
+      color:white;
+      text-align:center;
+      padding:40px 20px;
+    }
+
+    header h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    header p{
+      font-size:18px;
+    }
+
+    /* Navigation */
+
+    nav{
+      background:white;
+      padding:15px;
+      text-align:center;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav a{
+      text-decoration:none;
+      color:#333;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#0077b6;
+    }
+
+    /* Hero Section */
+
+    .hero{
+      width:90%;
+      margin:40px auto;
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:25px;
+      align-items:center;
+    }
+
+    .hero-text{
+      background:white;
+      padding:35px;
+      border-radius:15px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hero-text h2{
+      font-size:35px;
+      color:#0077b6;
+      margin-bottom:15px;
+    }
+
+    .hero-text p{
+      line-height:1.7;
+      margin-bottom:20px;
+    }
+
+    .hero-text a{
+      text-decoration:none;
+      background:#0077b6;
+      color:white;
+      padding:12px 22px;
+      border-radius:6px;
+      display:inline-block;
+    }
+
+    .hero-image img{
+      width:100%;
+      border-radius:15px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Gallery Section */
+
+    .gallery{
+      width:90%;
+      margin:50px auto;
+      text-align:center;
+    }
+
+    .gallery h2{
+      color:#0077b6;
+      margin-bottom:30px;
+      font-size:34px;
+    }
+
+    .gallery-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .gallery-card{
+      position:relative;
+      overflow:hidden;
+      border-radius:15px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+      cursor:pointer;
+    }
+
+    .gallery-card img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      transition:0.5s;
+    }
+
+    .gallery-card:hover img{
+      transform:scale(1.1);
+    }
+
+    .overlay{
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background:rgba(0,0,0,0.6);
+      color:white;
+      padding:20px;
+      transform:translateY(100%);
+      transition:0.5s;
+    }
+
+    .gallery-card:hover .overlay{
+      transform:translateY(0);
+    }
+
+    /* Cards Section */
+
+    .container{
+      width:90%;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      color:#0077b6;
+      margin-bottom:30px;
+      font-size:34px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      width:100%;
+      height:180px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+      text-align:center;
+    }
+
+    .card-content h2{
+      margin-bottom:10px;
+      color:#0077b6;
+    }
+
+    .card-content p{
+      margin-bottom:15px;
+      font-size:15px;
+      line-height:1.5;
+    }
+
+    .btn{
+      text-decoration:none;
+      background:#0077b6;
+      color:white;
+      padding:10px 18px;
+      border-radius:5px;
+      display:inline-block;
+    }
+
+    /* Footer */
+
+    footer{
+      background:#023e8a;
+      color:white;
+      text-align:center;
+      padding:18px;
+      margin-top:40px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+
+  <header>
+    <h1>Travel Experiences</h1>
+    <p>Explore beautiful journeys and unforgettable adventures around the world.</p>
+  </header>
+
+  <!-- Navigation -->
+
+  <nav>
+    <a href="Experiences.html">Home</a>
+    <a href="adventure.html">Adventure</a>
+    <a href="food.html">Food Tourism</a>
+    <a href="cultural.html">Cultural Tourism</a>
+    <a href="wildlife.html">Wildlife</a>
+    <a href="beach.html">Beach Vacations</a>
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero">
+
+    <div class="hero-text">
+      <h2>Discover Amazing Places</h2>
+      <p>
+        Traveling creates unforgettable memories and allows people to explore
+        different cultures, foods, adventures and natural beauty around the world.
+        Start your dream journey today and experience exciting destinations.
+      </p>
+
+      <a href="#travelcards">Explore More</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="">
+    </div>
+
+  </section>
+
+  <!-- Interactive Gallery -->
+
+  <section class="gallery">
+
+    <h2>Popular Travel Destinations</h2>
+
+    <div class="gallery-container">
+
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+        <div class="overlay">
+          <h3>Beach Escape</h3>
+          <p>Relax near beautiful oceans and sunsets.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" alt="">
+        <div class="overlay">
+          <h3>Mountain Adventure</h3>
+          <p>Enjoy trekking and nature adventures.</p>
+        </div>
+      </div>
+
+      <div class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="">
+        <div class="overlay">
+          <h3>Food Journey</h3>
+          <p>Taste delicious cuisines around the world.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Cards Section -->
+
+  <div class="container" id="travelcards">
+
+    <h2 class="section-title">Explore Travel Experiences</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+        <div class="card-content">
+          <h2>Adventure Travel</h2>
+          <p>Enjoy trekking, rafting, camping and thrilling outdoor adventures.</p>
+          <a href="adventure.html" class="btn">Explore</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="">
+        <div class="card-content">
+          <h2>Food Tourism</h2>
+          <p>Discover famous cuisines, local dishes and street food cultures.</p>
+          <a href="food.html" class="btn">Explore</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da" alt="">
+        <div class="card-content">
+          <h2>Cultural Tourism</h2>
+          <p>Experience festivals, traditions and historical heritage sites.</p>
+          <a href="cultural.html" class="btn">Explore</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5" alt="">
+        <div class="card-content">
+          <h2>Wildlife Exploration</h2>
+          <p>Explore forests, safaris and amazing wildlife adventures.</p>
+          <a href="wildlife.html" class="btn">Explore</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+        <div class="card-content">
+          <h2>Beach Vacations</h2>
+          <p>Relax on beautiful beaches and enjoy peaceful coastal views.</p>
+          <a href="beach.html" class="btn">Explore</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+    <p>© 2026 Travel Experiences | Designed using HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
+```
