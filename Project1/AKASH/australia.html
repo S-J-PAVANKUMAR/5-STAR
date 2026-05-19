@@ -1,0 +1,187 @@
+<!-- =========================
+FILE: australia.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Australia Travel Guide</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef6f9;
+}
+
+/* HERO SECTION */
+.hero{
+    background:url('https://images.unsplash.com/photo-1523482580672-f109ba8cb9be');
+    background-size:cover;
+    background-position:center;
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    color:white;
+    background:rgba(0,0,0,0.6);
+    padding:20px 40px;
+    border-radius:12px;
+    font-size:55px;
+    letter-spacing:2px;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.container p{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:40px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h2{
+    padding:15px;
+    text-align:center;
+    color:#333;
+}
+
+/* BUTTON */
+.center{
+    text-align:center;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    text-decoration:none;
+    background:#0b3d91;
+    color:white;
+    padding:12px 28px;
+    border-radius:8px;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#ff9800;
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Australia Travel Guide</h1>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <p>
+        Australia is known for its beautiful beaches, coral reefs,
+        wildlife, modern cities, deserts, and natural wonders.
+    </p>
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8d4d7" alt="">
+            <h2>Sydney Opera House</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1510745981456-b95fe23f5753" alt="">
+            <h2>Beautiful Beaches</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be" alt="">
+            <h2>City Skyline</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027" alt="">
+            <h2>Australian Wildlife</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+            <h2>Nature Mountains</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="">
+            <h2>Ocean View</h2>
+        </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="center">
+        <a href="Destinations.html" class="btn">Back to Home</a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Australia Travel Guide</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!-- =========================
+FILE: europe.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Europe Travel Guide</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f2f5f7;
+}
+
+/* HERO SECTION */
+.hero{
+    background:url('https://images.unsplash.com/photo-1499856871958-5b9627545d1a');
+    background-size:cover;
+    background-position:center;
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    color:white;
+    background:rgba(0,0,0,0.6);
+    padding:20px 40px;
+    border-radius:12px;
+    font-size:55px;
+    letter-spacing:2px;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.container p{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:40px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h2{
+    padding:15px;
+    text-align:center;
+    color:#333;
+}
+
+/* BUTTON */
+.center{
+    text-align:center;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    text-decoration:none;
+    background:#1b4d89;
+    color:white;
+    padding:12px 28px;
+    border-radius:8px;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#ff9800;
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Europe Travel Guide</h1>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <p>
+        Europe is famous for historic cities, beautiful architecture,
+        castles, mountains, rivers, and cultural landmarks.
+    </p>
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a" alt="">
+            <h2>Eiffel Tower</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521295121783-8a321d551ad2" alt="">
+            <h2>European Streets</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1471623320832-752e8bbf8413" alt="">
+            <h2>Historic Buildings</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="">
+            <h2>Paris City</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b" alt="">
+            <h2>European Mountains</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="">
+            <h2>Beautiful Coastline</h2>
+        </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="center">
+        <a href="Destinations.html" class="btn">Back to Home</a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Europe Travel Guide</p>
+</footer>
+
+</body>
+</html>

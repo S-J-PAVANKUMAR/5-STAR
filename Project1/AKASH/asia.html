@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asia Travel Guide</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#eef7ff;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(to right,#0077b6,#00b4d8);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/* Navigation */
+
+nav{
+    background:#023e8a;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* Hero Section */
+
+.hero{
+    background:url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=1200&auto=format&fit=crop') center/cover;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-text{
+    background:rgba(0,0,0,0.5);
+    padding:25px;
+    border-radius:10px;
+}
+
+.hero-text h2{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+/* Main Container */
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+/* Cards */
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:30px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2{
+    color:#0077b6;
+    margin-bottom:15px;
+}
+
+/* Image Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
+
+.image-card{
+    overflow:hidden;
+    border-radius:10px;
+    background:white;
+    box-shadow:0 3px 8px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.image-card:hover{
+    transform:translateY(-5px);
+}
+
+.image-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    transition:0.5s;
+}
+
+.image-card:hover img{
+    transform:scale(1.08);
+}
+
+.image-info{
+    padding:15px;
+    text-align:center;
+}
+
+.image-info h3{
+    color:#023e8a;
+    margin-bottom:8px;
+}
+
+/* Tips */
+
+.tips ul{
+    margin-left:20px;
+    line-height:2;
+}
+
+/* Button */
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    background:#0077b6;
+    color:white;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:#023e8a;
+}
+
+/* Footer */
+
+footer{
+    background:#023047;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Asia Travel Guide</h1>
+    <p>Explore the Beauty, Culture, and Adventure of Asia</p>
+</header>
+
+<nav>
+    <a href="Destinations.html">Home</a>
+    <a href="#places">Places</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#tips">Travel Tips</a>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Discover Amazing Asia</h2>
+        <p>Temples, mountains, beaches, and modern cities await you.</p>
+    </div>
+</section>
+
+<div class="container">
+
+    <!-- Popular Places -->
+
+    <div class="card" id="places">
+        <h2>Popular Tourist Attractions</h2>
+
+        <div class="gallery">
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=1200&auto=format&fit=crop" alt="Taj Mahal">
+                <div class="image-info">
+                    <h3>Taj Mahal</h3>
+                    <p>India's famous symbol of love.</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?q=80&w=1200&auto=format&fit=crop" alt="Great Wall">
+                <div class="image-info">
+                    <h3>Great Wall of China</h3>
+                    <p>Historic wonder stretching across China.</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?q=80&w=1200&auto=format&fit=crop" alt="Mount Fuji">
+                <div class="image-info">
+                    <h3>Mount Fuji</h3>
+                    <p>Japan's beautiful volcanic mountain.</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?q=80&w=1200&auto=format&fit=crop" alt="Thailand Beach">
+                <div class="image-info">
+                    <h3>Thailand Beaches</h3>
+                    <p>Crystal-clear water and tropical islands.</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=1200&auto=format&fit=crop" alt="Singapore">
+                <div class="image-info">
+                    <h3>Singapore City</h3>
+                    <p>Modern skyline and futuristic attractions.</p>
+                </div>
+            </div>
+
+            <div class="image-card">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop" alt="Bali">
+                <div class="image-info">
+                    <h3>Bali</h3>
+                    <p>Peaceful island with nature and temples.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Travel Tips -->
+
+    <div class="card tips" id="tips">
+        <h2>Travel Tips for Asia</h2>
+
+        <ul>
+            <li>Carry local currency for small purchases.</li>
+            <li>Best travel season: October to March.</li>
+            <li>Respect local traditions and culture.</li>
+            <li>Try famous Asian street foods safely.</li>
+            <li>Keep passport and travel documents secure.</li>
+        </ul>
+
+        <a href="Destinations.html" class="button">← Back to Home</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Asia Travel Guide</p>
+</footer>
+
+</body>
+</html>

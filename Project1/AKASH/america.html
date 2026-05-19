@@ -1,0 +1,187 @@
+<!-- =========================
+FILE: america.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>America Travel Guide</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f5f7;
+}
+
+/* HERO SECTION */
+.hero{
+    background:url('https://images.unsplash.com/photo-1501594907352-04cda38ebc29');
+    background-size:cover;
+    background-position:center;
+    height:70vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    color:white;
+    background:rgba(0,0,0,0.6);
+    padding:20px 40px;
+    border-radius:12px;
+    font-size:55px;
+    letter-spacing:2px;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    margin:auto;
+    padding:50px 0;
+}
+
+.container p{
+    text-align:center;
+    font-size:18px;
+    line-height:1.8;
+    color:#444;
+    margin-bottom:40px;
+}
+
+/* GALLERY */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card h2{
+    padding:15px;
+    text-align:center;
+    color:#333;
+}
+
+/* BUTTON */
+.center{
+    text-align:center;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:40px;
+    text-decoration:none;
+    background:#0d47a1;
+    color:white;
+    padding:12px 28px;
+    border-radius:8px;
+    transition:0.3s;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#ff9800;
+}
+
+/* FOOTER */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>America Travel Guide</h1>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+
+    <p>
+        America is famous for modern cities, natural wonders,
+        beaches, mountains, and world-famous landmarks.
+    </p>
+
+    <!-- IMAGE GALLERY -->
+    <div class="gallery">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1485738422979-f5c462d49f74" alt="">
+            <h2>Golden Gate Bridge</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29" alt="">
+            <h2>New York Skyline</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+            <h2>Grand Canyon</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c" alt="">
+            <h2>Las Vegas</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2" alt="">
+            <h2>Chicago City</h2>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="">
+            <h2>Miami Beach</h2>
+        </div>
+
+    </div>
+
+    <!-- BUTTON -->
+    <div class="center">
+        <a href="Destinations.html" class="btn">Back to Home</a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 America Travel Guide</p>
+</footer>
+
+</body>
+</html>
