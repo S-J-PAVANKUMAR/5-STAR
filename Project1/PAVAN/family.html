@@ -1,0 +1,223 @@
+<!-- =========================
+File: family.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family Trip Planning</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#fdf2f8;
+    }
+
+    header{
+      background:#d63384;
+      color:white;
+      text-align:center;
+      padding:35px;
+    }
+
+    nav{
+      background:#b0256c;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:15px;
+      font-weight:bold;
+      font-size:16px;
+    }
+
+    nav a:hover{
+      color:yellow;
+    }
+
+    .container{
+      width:85%;
+      margin:auto;
+      padding:30px 0;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      margin-bottom:30px;
+      border-radius:15px;
+      box-shadow:0 5px 12px rgba(0,0,0,0.15);
+    }
+
+    h2{
+      color:#d63384;
+      margin-bottom:15px;
+    }
+
+    p{
+      line-height:1.7;
+    }
+
+    /* Gallery Section */
+
+    .gallery{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .gallery img{
+      width:300px;
+      height:220px;
+      object-fit:cover;
+      border-radius:12px;
+      transition:0.4s;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .gallery img:hover{
+      transform:scale(1.08);
+    }
+
+    /* Features Section */
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .feature-box{
+      background:#ffe3ef;
+      padding:20px;
+      border-radius:12px;
+      text-align:center;
+      transition:0.4s;
+    }
+
+    .feature-box:hover{
+      background:#d63384;
+      color:white;
+      transform:translateY(-6px);
+    }
+
+    .feature-box h3{
+      margin-bottom:10px;
+    }
+
+    footer{
+      background:#d63384;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Family Trip Planning</h1>
+  <p>Create Beautiful Memories with Your Family</p>
+</header>
+
+<nav>
+  <a href="Planning.html">Home</a>
+  <a href="budget.html">Budget Planning</a>
+  <a href="luxury.html">Luxury Trip</a>
+  <a href="family.html">Family Trip</a>
+  <a href="solo.html">Solo Trip</a>
+  <a href="group.html">Group Travel</a>
+</nav>
+
+<div class="container">
+
+  <!-- Intro Section -->
+
+  <div class="card">
+
+    <h2>Enjoy Travel with Family</h2>
+
+    <p>
+      Family trip planning helps families enjoy vacations together with comfort,
+      safety, and entertainment. A good family trip includes child-friendly places,
+      relaxing stays, and fun activities for every age group.
+    </p>
+
+  </div>
+
+  <!-- Gallery Section -->
+
+  <div class="card">
+
+    <h2>Family Travel Gallery</h2>
+
+    <div class="gallery">
+
+      <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300" alt="Family Vacation">
+
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Family Trip">
+
+      <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff" alt="Family Beach Trip">
+
+    </div>
+
+  </div>
+
+  <!-- Features Section -->
+
+  <div class="card">
+
+    <h2>Family Travel Benefits</h2>
+
+    <div class="features">
+
+      <div class="feature-box">
+        <h3>Fun Activities</h3>
+        <p>Enjoy games, sightseeing, and adventures together.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Comfortable Stay</h3>
+        <p>Choose family-friendly hotels and resorts for relaxation.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Safe Travel</h3>
+        <p>Family trips focus on safety and medical support.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Memorable Moments</h3>
+        <p>Create unforgettable memories with loved ones.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Family Travel Planning</p>
+</footer>
+
+</body>
+</html>

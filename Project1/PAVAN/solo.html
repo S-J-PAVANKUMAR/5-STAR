@@ -1,0 +1,223 @@
+<!-- =========================
+File: solo.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solo Trip Planning</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#eefcf3;
+    }
+
+    header{
+      background:#20c997;
+      color:white;
+      text-align:center;
+      padding:35px;
+    }
+
+    nav{
+      background:#159a74;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:15px;
+      font-weight:bold;
+      font-size:16px;
+    }
+
+    nav a:hover{
+      color:yellow;
+    }
+
+    .container{
+      width:85%;
+      margin:auto;
+      padding:30px 0;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      margin-bottom:30px;
+      border-radius:15px;
+      box-shadow:0 5px 12px rgba(0,0,0,0.15);
+    }
+
+    h2{
+      color:#20c997;
+      margin-bottom:15px;
+    }
+
+    p{
+      line-height:1.7;
+    }
+
+    /* Gallery Section */
+
+    .gallery{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .gallery img{
+      width:300px;
+      height:220px;
+      object-fit:cover;
+      border-radius:12px;
+      transition:0.4s;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .gallery img:hover{
+      transform:scale(1.08);
+    }
+
+    /* Features Section */
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .feature-box{
+      background:#d9fff3;
+      padding:20px;
+      border-radius:12px;
+      text-align:center;
+      transition:0.4s;
+    }
+
+    .feature-box:hover{
+      background:#20c997;
+      color:white;
+      transform:translateY(-6px);
+    }
+
+    .feature-box h3{
+      margin-bottom:10px;
+    }
+
+    footer{
+      background:#20c997;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Solo Trip Planning</h1>
+  <p>Explore the World with Freedom and Confidence</p>
+</header>
+
+<nav>
+  <a href="Planning.html">Home</a>
+  <a href="budget.html">Budget Planning</a>
+  <a href="luxury.html">Luxury Trip</a>
+  <a href="family.html">Family Trip</a>
+  <a href="solo.html">Solo Trip</a>
+  <a href="group.html">Group Travel</a>
+</nav>
+
+<div class="container">
+
+  <!-- Intro Section -->
+
+  <div class="card">
+
+    <h2>Independent Travel Experience</h2>
+
+    <p>
+      Solo travel gives people the freedom to explore places independently.
+      It helps improve confidence, decision-making skills, and personal growth.
+      Travelers can enjoy peaceful journeys and discover new cultures at their own pace.
+    </p>
+
+  </div>
+
+  <!-- Gallery Section -->
+
+  <div class="card">
+
+    <h2>Solo Travel Gallery</h2>
+
+    <div class="gallery">
+
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Solo Mountain Travel">
+
+      <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e" alt="Solo Backpacking">
+
+      <img src="https://images.unsplash.com/photo-1527631746610-bca00a040d60" alt="Solo Adventure">
+
+    </div>
+
+  </div>
+
+  <!-- Features Section -->
+
+  <div class="card">
+
+    <h2>Benefits of Solo Travel</h2>
+
+    <div class="features">
+
+      <div class="feature-box">
+        <h3>Freedom</h3>
+        <p>Travel anytime and anywhere without depending on others.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Confidence</h3>
+        <p>Solo travel improves confidence and independence.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Self Discovery</h3>
+        <p>Learn more about yourself through new experiences.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>Adventure</h3>
+        <p>Enjoy exciting activities and explore hidden destinations.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Solo Travel Planning</p>
+</footer>
+
+</body>
+</html>

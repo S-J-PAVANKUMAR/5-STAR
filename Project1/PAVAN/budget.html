@@ -1,0 +1,228 @@
+<!-- =========================
+File: budget.html
+========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget Planning</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#eef5ff;
+    }
+
+    header{
+      background:#198754;
+      color:white;
+      text-align:center;
+      padding:30px;
+    }
+
+    nav{
+      background:#145c32;
+      padding:15px;
+      text-align:center;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:15px;
+      font-weight:bold;
+      font-size:16px;
+    }
+
+    nav a:hover{
+      color:yellow;
+    }
+
+    .container{
+      width:85%;
+      margin:auto;
+      padding:30px 0;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      margin-bottom:30px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2{
+      color:#198754;
+      margin-bottom:15px;
+    }
+
+    p{
+      line-height:1.7;
+    }
+
+    ul{
+      margin-left:20px;
+      margin-top:10px;
+    }
+
+    li{
+      margin-bottom:10px;
+    }
+
+    /* Gallery Section */
+
+    .gallery{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+      justify-content:center;
+      margin-top:20px;
+    }
+
+    .gallery img{
+      width:300px;
+      height:200px;
+      object-fit:cover;
+      border-radius:10px;
+      transition:0.4s;
+      box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .gallery img:hover{
+      transform:scale(1.08);
+    }
+
+    /* Tips Section */
+
+    .tips{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+
+    .tip-box{
+      background:#d1e7dd;
+      padding:20px;
+      border-radius:10px;
+      text-align:center;
+      transition:0.4s;
+    }
+
+    .tip-box:hover{
+      background:#198754;
+      color:white;
+      transform:translateY(-5px);
+    }
+
+    footer{
+      background:#198754;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Budget Travel Planning</h1>
+  <p>Enjoy Amazing Trips at Low Cost</p>
+</header>
+
+<nav>
+  <a href="Planning.html">Home</a>
+  <a href="budget.html">Budget Planning</a>
+  <a href="luxury.html">Luxury Trip</a>
+  <a href="family.html">Family Trip</a>
+  <a href="solo.html">Solo Trip</a>
+  <a href="group.html">Group Travel</a>
+</nav>
+
+<div class="container">
+
+  <!-- Intro Section -->
+
+  <div class="card">
+
+    <h2>Affordable Travel Experience</h2>
+
+    <p>
+      Budget travel planning helps travelers enjoy wonderful trips while spending less money.
+      By choosing affordable hotels, public transportation, and budget-friendly food,
+      travelers can save money and still explore beautiful destinations.
+    </p>
+
+  </div>
+
+  <!-- Image Gallery -->
+
+  <div class="card">
+
+    <h2>Travel Gallery</h2>
+
+    <div class="gallery">
+
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Beach Travel">
+
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Mountain Travel">
+
+      <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800" alt="Travel Destination">
+
+    </div>
+
+  </div>
+
+  <!-- Tips Section -->
+
+  <div class="card">
+
+    <h2>Budget Saving Tips</h2>
+
+    <div class="tips">
+
+      <div class="tip-box">
+        <h3>Book Early</h3>
+        <p>Early booking helps you get lower prices on flights and hotels.</p>
+      </div>
+
+      <div class="tip-box">
+        <h3>Use Public Transport</h3>
+        <p>Buses and trains are cheaper than taxis and rental cars.</p>
+      </div>
+
+      <div class="tip-box">
+        <h3>Travel Off Season</h3>
+        <p>Traveling during off-season reduces costs and avoids crowds.</p>
+      </div>
+
+      <div class="tip-box">
+        <h3>Eat Local Food</h3>
+        <p>Local restaurants are affordable and offer authentic food experiences.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Budget Travel Planning</p>
+</footer>
+
+</body>
+</html>
