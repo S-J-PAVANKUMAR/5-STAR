@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website Home</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f7fb;
+            color:#333;
+        }
+
+        header{
+            height:100vh;
+            background:
+            linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+            url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        header h1{
+            font-size:65px;
+            margin-bottom:20px;
+        }
+
+        header p{
+            font-size:22px;
+            max-width:800px;
+            line-height:1.6;
+        }
+
+        .btn{
+            margin-top:30px;
+            padding:14px 28px;
+            background:#00b4d8;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+            font-size:18px;
+        }
+
+        .btn:hover{
+            background:#0077b6;
+        }
+
+        .section-title{
+            text-align:center;
+            margin:60px 0 30px;
+            font-size:40px;
+            color:#0077b6;
+        }
+
+        .nav-container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+            padding-bottom:60px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+            text-align:center;
+        }
+
+        .card-content h2{
+            color:#0077b6;
+            margin-bottom:15px;
+        }
+
+        .card-content p{
+            line-height:1.6;
+            margin-bottom:20px;
+        }
+
+        .card-content a{
+            text-decoration:none;
+            background:#0077b6;
+            color:white;
+            padding:10px 20px;
+            border-radius:6px;
+            display:inline-block;
+        }
+
+        .gallery{
+            width:90%;
+            margin:50px auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+        }
+
+        .gallery img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        footer{
+            background:#023e8a;
+            color:white;
+            text-align:center;
+            padding:25px;
+            margin-top:60px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Explore The World</h1>
+    <p>
+        Discover unforgettable destinations, plan perfect trips, 
+        and unlock amazing travel experiences through our complete travel guide portal.
+    </p>
+    <a href="#sections" class="btn">Start Exploring</a>
+</header>
+
+<h2 class="section-title" id="sections">Travel Sections</h2>
+
+<div class="nav-container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b">
+        <div class="card-content">
+            <h2>Destinations</h2>
+            <p>Explore continents, countries and breathtaking places around the globe.</p>
+            <a href="AKASH/Destinations.html">Explore</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1502920917128-1aa500764ce7">
+        <div class="card-content">
+            <h2>Travel Essentials</h2>
+            <p>Packing guides, visa information, safety tips and everything you need.</p>
+            <a href="SENTHIL/essentials.html">Explore</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
+        <div class="card-content">
+            <h2>Travel Experiences</h2>
+            <p>Adventure, beaches, food journeys and unforgettable memories.</p>
+            <a href="SARVESH/experiences.html">Explore</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828">
+        <div class="card-content">
+            <h2>Travel Planning</h2>
+            <p>Budget planning, itineraries and smart ways to organize your trips.</p>
+            <a href="PAVAN/planning.html">Explore</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05">
+        <div class="card-content">
+            <h2>Travel Resources</h2>
+            <p>Useful tools, booking guides, apps and resources for every traveler.</p>
+            <a href="BILAL/resources.html">Explore</a>
+        </div>
+    </div>
+
+</div>
+
+<h2 class="section-title">Travel Inspiration</h2>
+
+<div class="gallery">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+    <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
+    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800">
+    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1">
+</div>
+
+<footer>
+    <p>© 2026 Travel Guide Portal | Explore • Dream • Discover</p>
+</footer>
+
+</body>
+</html>
